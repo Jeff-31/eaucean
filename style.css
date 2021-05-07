@@ -1,0 +1,24 @@
+.rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button {
+  padding: 15px 40px;
+  border: 0;
+  border-radius: 20px;
+  background: #7298df;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button{
+  transition: transform 0.1s linear 0.1s;
+}
+
+.rejoin-button:hover, .donations-button:hover, .contact-button:hover, .actions-button:hover, 
+.agenda-button:hover{
+transform : scale(1.1, 1.1);
+}
+
+
+
