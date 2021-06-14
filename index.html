@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <!-- Latest bootstrap compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
@@ -16,16 +17,19 @@
   <meta name="description" content="Association pour la défense des Océans"/>
   <title>Eaucean</title>
 </head>
-<body>
-  <header >
+<body class="container-fluid">
+  <header>
     <!-- Menu + Logo-->
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-light row" style="background-color: #f8f8f8;">
-      <img class="navbar-brand mb-0 logo" 
+    <div class="row logo">
+      <img 
             src="https://fontmeme.com/permalink/210517/2b26f4ba1548a2884f79955878b2d2fc.png" 
             alt="Eaucéan">
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-facebook-square"></i>
+    </div>
+    <nav class="row navbar  navbar-light" style="background-color: white;">
+      <div class="fishAnimation"></div>
+      <a class ="navbar-brand">Menu</a>
           <button type="button" 
                   class="navbar-toggler"
                   data-toggle="collapse" 
@@ -33,11 +37,12 @@
                   aria-controls="#navbarNavDropdown" 
                   aria-expanded="false" 
                   aria-label="ToggleNavigation">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"          fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16     16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"fill="currentColor"
+                   class="bi bi-three-dots-vertical" viewBox="0 0 16     16">
                   <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1     1-3 0       1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3    0z"/>
                   </svg>
-          </button>      
-    <div class ="collapse navbar-collapse" id="navbarNavDropdown">
+          </button>    
+    <div class ="collapse " id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
          <a class="nav-link text-info" href="#">Qui sommes nous</a>
@@ -55,8 +60,7 @@
       </ul>
     </div>
     </nav>
-    </div>
-    <div class="bannieres"
+    <div class="row bannieres"
       <!-- Banniere-->
       <h1>Préserver les Océans <br> c'est préserver notre futur</h1>
         <!-- Boutons-->
@@ -66,15 +70,15 @@
       </div>
     </div>
   </header>
-  <article>
+  <article >
+    <div class="row">
     <!-- Section qui somme nous-->
-    <section>
-      <div class="card text-white bg-info mb-3  shadow whoarewe">
-      <h2 class="card-title">Qui sommes nous</h2>
-      <img class="card-img-top rounded-lg teamPic"
-         src="https://images.unsplash.com/photo-1483428400520-675ef69a3bc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="Photo équipe">
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
+    <section class="col-12 col-md-6 col-xl-4">
+      <div class="card whoarewe shadow">
+        <h2>Qui sommes nous</h2>
+        <img class="rounded-lg teamPic"
+          src="https://images.unsplash.com/photo-1483428400520-675ef69a3bc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="Photo équipe">
+        <p class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
               at non nisi. Pellentesque pretium eleifend turpis, id faucibus massa malesuada vel. 
               Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu dapibus. Morbi consectetur 
               dictum interdum. Morbi volutpat augue a diam malesuada hendrerit. Maecenas consequat 
@@ -87,50 +91,45 @@
               maximus nisi, vitae posuere nunc lobortis at. Proin finibus facilisis dolor sit amet 
               maximus. Ut maximus quam at ex dictum hendrerit.</p>
           <button class="contact-button">Contact</button>
-        </div>
-      </div>
-
-    </section>
+       </div>
+    </section >
     <!-- Section Nos actions-->
-    <section class="card text-white bg-info mb-3" >
+    <section class="col-12 col-md-6 col-xl-4">
+      <div class="card actions">
       <h2>Nos actions</h2>
-      <div class="card card text-white bg-primary mb-3 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Action 1</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
+      <div class="action1">
+          <h6>Action 1</h6>
+          <p class= "actionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
             mi et orci congue varius at non nisi. Pellentesque pretium eleifend turpis, id faucibus 
             massa malesuada vel. Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu 
             dapibus. Morbi consectetur dictum interdum. Morbi volutpat augue a diam malesuada 
             hendrerit. Maecenas consequat maximus nisi, vitae posuere nunc lobortis at. Proin 
             finibus facilisis dolor sit amet maximus. Ut maximus quam at ex dictum hendrerit. </p>
-        </div>
       </div>
-      <div class="card card text-white bg-primary mb-3 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Action 2</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
+      <div class="action2">
+          <h6>Action 2</h6>
+          <p class="actionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
             mi et orci congue varius at non nisi. Pellentesque pretium eleifend turpis, id faucibus 
             massa malesuada vel. Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu 
             dapibus. Morbi consectetur dictum interdum. Morbi volutpat augue a diam malesuada 
             hendrerit. Maecenas consequat maximus nisi, vitae posuere nunc lobortis at. Proin 
             finibus facilisis dolor sit amet maximus. Ut maximus quam at ex dictum hendrerit. </p>
-        </div>
       </div>
-      <div class="card card text-white bg-primary mb-3 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Action 3</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
+      <div class="action3">
+          <h6>Action 3</h6>
+          <p class="actionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
             mi et orci congue varius at non nisi. Pellentesque pretium eleifend turpis, id faucibus 
             massa malesuada vel. Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu 
             dapibus. Morbi consectetur dictum interdum. Morbi volutpat augue a diam malesuada 
             hendrerit. Maecenas consequat maximus nisi, vitae posuere nunc lobortis at. Proin 
             finibus facilisis dolor sit amet maximus. Ut maximus quam at ex dictum hendrerit. </p>
-        </div>
       </div>
       <button class="actions-button">Voir toutes nos actions</button>
+      </div>
     </section>
     <!-- Section Agenda-->
-    <section class="card text-white bg-info mb-3">
+    <section class="col-12 col-md-6 col-xl-4">
+      <div class="card agenda">
       <h2>Agenda</h2>
       <table class="table table-hover shadow">
         <thead>
@@ -154,19 +153,23 @@
           </tr>
          </tbody>
       </table>
+      </div>
     </section>
     <!-- Section Dons-->
-    <sections class="card text-white bg-info mb-3">
-      <h2>Dons</h2>
+    <sections class="col-12 col-md-6 col-xl-4">
+      <div class="card dons">
+      <h6>Dons</h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
          at non nisi. Pellentesque pretium eleifend turpis, id faucibus massa malesuada vel. 
          Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu dapibus. Morbi consectetur 
          dictum interdum. Morbi volutpat augue a diam malesuada hendrerit. Maecenas consequat 
          maximus nisi, vitae posuere nunc lobortis at. Proin finibus facilisis dolor sit amet 
          maximus. Ut maximus quam at ex dictum hendrerit.</p>
-      <img class="teamPic" src="https://picsum.photos/150/200" alt="dons">
+      <img class="teamPic" src="https://picsum.photos/150/150" alt="dons">
       <button class="donations-button">Dons</button>
+      </div>
     </sections>
+  </div>
   </article>
   <footer>
     <div>
