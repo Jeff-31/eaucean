@@ -8,19 +8,32 @@
   opacity: 0.7;
 }
 
+<<<<<<< HEAD
 /* specific color for each social network */
 
+=======
+/*social network */
+>>>>>>> article
 /* Facebook */
 .fa-facebook-square {
   background: white;
   color: #3B5998;
   display: inline-block;
+<<<<<<< HEAD
   width: 30px;
   height: 30px;
   text-align: center;
   border-radius: 5px;
   font-size: 30px;
   line-height: 30px;
+=======
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 20px;
+>>>>>>> article
   vertical-align: middle;
 }
 /* Twitter */
@@ -29,17 +42,27 @@
   color: #55ACEE;
   font-size: 30px;
   display: inline-block;
+<<<<<<< HEAD
   width: 30px;
   height: 30px;
   text-align: center;
   border-radius: 5px;
   font-size: 30px;
   line-height: 30px;
+=======
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 20px;
+>>>>>>> article
   vertical-align: middle;
 }
 .fa-linkedin {
   background: white;
   color: #007bb5;
+<<<<<<< HEAD
   font-size: 30px;
   display: inline-block;
   width: 30px;
@@ -48,10 +71,21 @@
   border-radius: 5px;
   font-size: 30px;
   line-height: 30px;
+=======
+  font-size: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 20px;
+>>>>>>> article
   vertical-align: middle;
 }
 .fa-instagram-square {
   display: inline-block;
+<<<<<<< HEAD
   width: 30px;
   height: 30px;
   text-align: center;
@@ -59,6 +93,15 @@
   color: #fff;
   font-size: 30px;
   line-height: 30px;
+=======
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+>>>>>>> article
   vertical-align: middle;
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,
@@ -66,24 +109,50 @@
 }
 
 .logo {
+<<<<<<< HEAD
   width: 18rem
 }
 
 nav,.container-fluid {
 justify-content: space-between;
+=======
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+  width: auto;
+  background: #fff;
+>>>>>>> article
 }
 
 .collapse{
 justify-content: flex-end;
 }
 
+<<<<<<< HEAD
+=======
+.navbar, .navbar-brand{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem ;
+}
+
+>>>>>>> article
 .bannieres{
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
 text-align: center;
+<<<<<<< HEAD
 background-image:url(https://picsum.photos/id/1041/300/200);
+=======
+background-image:url(pictures/header.jpg);
+>>>>>>> article
 background-repeat: no-repeat;
 background-size: 100% 200px;
 height: 200px;
@@ -94,20 +163,26 @@ color: white;
   margin: 4px 50px 4px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> article
 .rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button {
-  padding: 15px 40px;
+  padding: 5px 20px;
+  margin: 20px;
   border: 0;
   border-radius: 20px;
-  background: #7298df;
+  background: #00a2ff;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   display: inline;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
+
+
 .rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button{
   transition: transform 0.1s linear 0.1s;
 }
@@ -117,5 +192,55 @@ color: white;
 transform : scale(1.1, 1.1);
 }
 
+.teamPic{
+  object-fit: cover;
+  width: 400px;
+  height: auto;
+  }
 
+.card{
+    margin: 10px 5px;
+    background: rgb(85, 159, 245);
+    border-radius: 1em;
+  }
 
+p{
+  padding: 15px;
+}
+
+h6{
+  font-size: 1.5rem;
+  padding-left: 15px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  margin-right: 10px
+}
+
+body {
+  background-image:url(pictures/body.jpg);
+  }
+
+nav{
+  color:#559ff5;
+
+}
+.fishAnimation{
+  animation: 3s ease-in 0.5s infinite alternate gogogo;
+  margin-right: 30px;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  background-image: url(pictures/fish.jpg);
+  background-size: 100%;
+}
+  
+@keyframes gogogo{
+  0% {
+    width: 50px;
+    height:50px;}
+  100% { 
+  transform: translateX(85%);}
+}
