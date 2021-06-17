@@ -74,7 +74,7 @@
     <div class="row">
     <!-- Section qui somme nous-->
     <section class="col-12 col-md-6 col-xl-4">
-      <div class="card whoarewe shadow">
+      <div class="card whoarewe shadow" id="whoarewe">
         <h2>Qui sommes nous</h2>
         <img class="rounded-lg teamPic"
           src="https://images.unsplash.com/photo-1483428400520-675ef69a3bc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="Photo équipe">
@@ -95,7 +95,7 @@
     </section >
     <!-- Section Nos actions-->
     <section class="col-12 col-md-6 col-xl-4">
-      <div class="card actions">
+      <div class="card actions" id="actionscard">
       <h2>Nos actions</h2>
       <div class="action1">
           <h6>Action 1</h6>
@@ -129,7 +129,7 @@
     </section>
     <!-- Section Agenda-->
     <section class="col-12 col-md-6 col-xl-4">
-      <div class="card agenda">
+      <div class="card agenda" id="agendaCard">
       <h2>Agenda</h2>
       <table class="table table-hover shadow">
         <thead>
@@ -157,7 +157,7 @@
     </section>
     <!-- Section Dons-->
     <sections class="col-12 col-md-6 col-xl-4">
-      <div class="card dons">
+      <div class="card dons" id="donations">
       <h6>Dons</h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
          at non nisi. Pellentesque pretium eleifend turpis, id faucibus massa malesuada vel. 
@@ -172,28 +172,38 @@
   </div>
   </article>
   <footer>
-    <div>
+    <div class="footerContents">
       <!-- sommaire-->
-      <ul>
-        <li>Qui sommes nous</li>
-        <li>Nos actions</li>
-        <li>Agenda</li>
-        <li>Dons</li>
-      </ul>
+      <div class="summary">
+        <h5 class="listtitle">Sections</h5>
+          <ul>
+            <li><a href="#whoarewe">Qui sommes nous</a></li>
+            <li><a href="#actionscard">Nos actions</a></li>
+            <li><a href="#agendaCard">Agenda</a></li>
+            <li><a href="#donations">Dons</a></li>
+          </ul>
+      </div>
       <!-- sites partenaires-->
-      <ul>
-        <li><a href="http://www.bloomassociation.org/" target="_blank">Association bloom</a></li>
-        <li><a href="https://waterfamily.org/" target="_blank">Association Water Family</a></li>
-        <li><a href="https://oceans.taraexpeditions.org/" target="_blank">Association Tara Océan</a></li>
-      </ul>
+      <div class="partnerSite">
+        <h5 class="listtitle">Partenaires</h5>
+          <ul>
+            <li><a href="http://www.bloomassociation.org/" target="_blank">Association bloom</a></li>
+            <li><a href="https://waterfamily.org/" target="_blank">Association Water Family</a></li>
+            <li><a href="https://oceans.taraexpeditions.org/" target="_blank">Association Tara Océan</a></li>
+          </ul>
+      </div>
       <!-- social network-->
-      <ul>
-        <li><i class="fab fa-twitter-square"></i></li>
-        <li><i class="fab fa-facebook-square"></i></li>
-        <li><i class="fab fa-linkedin"></i></li>
-        <li><i class="fab fa-instagram-square"></i></li>
-      </ul>
+      <div >
+        <h5 class="listtitle">Réseaux sociaux</h5>
+          <ul class="socialList">
+            <li><i class="fab fa-twitter-square"></i></li>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+            <li><i class="fab fa-instagram-square"></i></li>
+          </ul>
+      </div>
     </div>
+        <p class="copyright">© 2021 Site personnel pour évalution</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 

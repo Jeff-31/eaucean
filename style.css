@@ -119,6 +119,12 @@ color: white;
   cursor: pointer;
 }
 
+ul {
+  list-style-type: none;
+  margin-left:0;
+  padding-left:0;
+}
+
 
 .rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button{
   transition: transform 0.1s linear 0.1s;
@@ -180,4 +186,24 @@ nav{
     height:50px;}
   100% { 
   transform: translateX(85%);}
+}
+
+footer{
+  background:rgb(2, 47, 99) ;
+  color: #fff;
+}
+.footerContents{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.socialList li{
+  display: inline;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
