@@ -24,10 +24,11 @@
       <img 
             src="https://fontmeme.com/permalink/210517/2b26f4ba1548a2884f79955878b2d2fc.png" 
             alt="Eaucéan">
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-facebook-square"></i>
     </div>
     <nav class="row navbar  navbar-light" style="background-color: white;">
+      <a>Rejoignez nous sur les réseaux</a>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-facebook-square"></i>
       <div class="fishAnimation"></div>
       <a class ="navbar-brand">Menu</a>
           <button type="button" 
@@ -65,20 +66,20 @@
       <h1>Préserver les Océans <br> c'est préserver notre futur</h1>
         <!-- Boutons-->
       <div class="headerBoutons">
-        <button class="rejoin-button">Nous rejoindre</button>
-        <button class="donations-button">Dons</button>
+        <button class="rejoin-button" data-toggle="modal" data-target="#rejoin">Nous rejoindre</button>
+        <button class="donations-button" data-toggle="modal" data-target="#dons">Dons</button>
       </div>
     </div>
   </header>
   <article >
     <div class="row">
     <!-- Section qui somme nous-->
-    <section class="col-12 col-md-6 col-xl-4">
+    <section class="col-12 col-md-6 col-xl-6">
       <div class="card whoarewe shadow" id="whoarewe">
         <h2>Qui sommes nous</h2>
         <img class="rounded-lg teamPic"
           src="https://images.unsplash.com/photo-1483428400520-675ef69a3bc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="Photo équipe">
-        <p class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
               at non nisi. Pellentesque pretium eleifend turpis, id faucibus massa malesuada vel. 
               Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu dapibus. Morbi consectetur 
               dictum interdum. Morbi volutpat augue a diam malesuada hendrerit. Maecenas consequat 
@@ -90,11 +91,11 @@
               dictum interdum. Morbi volutpat augue a diam malesuada hendrerit. Maecenas consequat 
               maximus nisi, vitae posuere nunc lobortis at. Proin finibus facilisis dolor sit amet 
               maximus. Ut maximus quam at ex dictum hendrerit.</p>
-          <button class="contact-button">Contact</button>
+          <button class="contact-button" data-toggle="modal" data-target="#contact">Contact</button>
        </div>
     </section >
     <!-- Section Nos actions-->
-    <section class="col-12 col-md-6 col-xl-4">
+    <section class="col-12 col-md-6 col-xl-6">
       <div class="card actions" id="actionscard">
       <h2>Nos actions</h2>
       <div class="action1">
@@ -128,7 +129,7 @@
       </div>
     </section>
     <!-- Section Agenda-->
-    <section class="col-12 col-md-6 col-xl-4">
+    <section class="col-12 col-md-6 col-xl-6">
       <div class="card agenda" id="agendaCard">
       <h2>Agenda</h2>
       <table class="table table-hover shadow">
@@ -156,9 +157,9 @@
       </div>
     </section>
     <!-- Section Dons-->
-    <sections class="col-12 col-md-6 col-xl-4">
+    <sections class="col-12 col-md-6 col-xl-6">
       <div class="card dons" id="donations">
-      <h6>Dons</h6>
+      <h2>Dons</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi et orci congue varius
          at non nisi. Pellentesque pretium eleifend turpis, id faucibus massa malesuada vel. 
          Curabitur mollis purus commodo velit rhoncus, ac eleifend arcu dapibus. Morbi consectetur 
@@ -166,15 +167,127 @@
          maximus nisi, vitae posuere nunc lobortis at. Proin finibus facilisis dolor sit amet 
          maximus. Ut maximus quam at ex dictum hendrerit.</p>
       <img class="teamPic" src="https://picsum.photos/150/150" alt="dons">
-      <button class="donations-button">Dons</button>
+      <button class="donations-button" data-toggle="modal" data-target="#dons">Dons</button>
       </div>
     </sections>
+    <!-- Formulaires-->
+    <!-- Contact-->
+    <div class="modal" id="contact" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nous contacter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+      <div class="form-group">
+        <label for="inputEmail">Expediteur</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
+        placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="sujet">Sujet</label>
+        <input type="text" class="form-control" id="sujet" placeholder="Sujet">
+      </div>
+      <div class="form-group">
+        <label for="Message">Message</label>
+        <textarea class="form-control" id="Message" rows="3"></textarea>
+      </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nous rejoindre-->
+    <div class="modal" id="rejoin" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nous rejoindre</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p> Incrivez-vous pour recevoir nos newsletters, 
+              suivre nos actualités et participer à nos actions
+            </p>
+            <form>
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
+                placeholder="Enter email">
+               </div>
+              <div class="form-group">
+                <label for="Nom">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+                <label for="Prénom">Prénom</label>
+                <input type="text" class="form-control" id="prénom" placeholder="Prénom">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dons -->
+    <div class="modal" id="dons" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Dons</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p> Vos dons nous servent à faire vivre notre associations et nous aide dans nos actions.
+              <br> Cliquez sur paiement pour accéder à la page de validation.
+            </p>
+            <form>
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
+                placeholder="Enter email">
+                <label for="Nom">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+                <label for="Prénom">Prénom</label>
+                <input type="text" class="form-control" id="prénom" placeholder="Prénom">
+                <label class="control-label" for="valeurDon">Valeur du don</label>
+                <select id="valeurDon" class="form-control" name="valeurDon">
+                    <option value="2">2€</option>
+                    <option value="5">5€</option>
+                    <option value="10">10€</option>
+                    <option value="15">15€</option>
+                    <option value="20">20€</option>
+                    <option value="25">25€</option>
+                    <option value="50">50€</option>
+                    <option value="100">100€</option>
+                    <option value="100+">Don supèrieur à 100€</option>
+
+                </select> 
+              </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </article>
-  <footer>
+  <footer class="row">
     <div class="footerContents">
       <!-- sommaire-->
-      <div class="summary">
+      <div class="summary col-4 ">
         <h5 class="listtitle">Sections</h5>
           <ul>
             <li><a href="#whoarewe">Qui sommes nous</a></li>
@@ -184,7 +297,7 @@
           </ul>
       </div>
       <!-- sites partenaires-->
-      <div class="partnerSite">
+      <div class="partnerSite col-4">
         <h5 class="listtitle">Partenaires</h5>
           <ul>
             <li><a href="http://www.bloomassociation.org/" target="_blank">Association bloom</a></li>
@@ -193,7 +306,7 @@
           </ul>
       </div>
       <!-- social network-->
-      <div >
+      <div class="col-4">
         <h5 class="listtitle">Réseaux sociaux</h5>
           <ul class="socialList">
             <li><i class="fab fa-twitter-square"></i></li>
@@ -203,7 +316,7 @@
           </ul>
       </div>
     </div>
-        <p class="copyright">© 2021 Site personnel pour évalution</p>
+        <p class="copyright col-12">© 2021 Site personnel pour évaluation scolaire</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
