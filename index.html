@@ -131,26 +131,33 @@
     <!-- Section Agenda-->
     <section class="col-12 col-md-6 col-xl-6">
       <div class="card agenda" id="agendaCard">
-      <h2>Agenda</h2>
+      <h2>Agenda <br> (Cliquez sur le nom de l'évènement pour plus de détails)</h2>
       <table class="table table-hover shadow">
         <thead>
           <tr>
+            <th scope="col">Date</th>
             <th scope="col">Evenement</th>
-            <th scope="col">Detail</th>
+            <th scope="col">Détail</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td><button type="button" class="agenda-button">Détail</button></td>
+            <td>25/08/2021</td>
+            <td><a href="agenda.html#collecte" target="_blank" >Collecte de déchets </a></td>
+            <td><button class="agenda-button" data-toggle="modal" 
+              data-target="#inscription">Inscription</button></td>
           </tr>
           <tr>
-            <td>2</td>
-            <td><button type="button" class="agenda-button">Détail</button></td>
+            <td>25/09/2021</td>
+            <td><a href="agenda.html#sensibilisation" target="_blank" >Sensibilisation pour les enfants</a></td>
+            <td><button class="agenda-button" data-toggle="modal" 
+              data-target="#inscription">Inscription</button></td>
           </tr>
           <tr>
-            <td>2</td>
-            <td><button type="button" class="agenda-button">Détail</button></td>
+            <td>25/10/2021</td>
+            <td><a href="agenda.html#Exposition" target="_blank" >Exposition sur le thème de l'Océan</a></td>
+            <td><button class="agenda-button" data-toggle="modal" 
+              data-target="#inscription">Inscription</button></td>
           </tr>
          </tbody>
       </table>
@@ -170,8 +177,8 @@
       <button class="donations-button" data-toggle="modal" data-target="#dons">Dons</button>
       </div>
     </sections>
-    <!-- Formulaires-->
-    <!-- Contact-->
+      <!-- formulaireContact-->
+    <form>
     <div class="modal" id="contact" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -182,20 +189,15 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
-      <div class="form-group">
-        <label for="inputEmail">Expediteur</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
-        placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="sujet">Sujet</label>
-        <input type="text" class="form-control" id="sujet" placeholder="Sujet">
-      </div>
-      <div class="form-group">
-        <label for="Message">Message</label>
-        <textarea class="form-control" id="Message" rows="3"></textarea>
-      </div>
+            <div class="form-group">
+              <label for="inputEmail">Expediteur</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
+                placeholder="email">
+              <label for="sujet">Sujet</label>
+              <input type="text" class="form-control" id="sujet" placeholder="Sujet">
+              <label for="Message">Message</label>
+              <textarea class="form-control" id="Message" rows="3"></textarea>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Valider</button>
@@ -204,41 +206,42 @@
         </div>
       </div>
     </div>
-    <!-- Nous rejoindre-->
+    </form>
+      <!--formulaireRejoindre-->
+    <form>
     <div class="modal" id="rejoin" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Nous rejoindre</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-header">
+              <h5 class="modal-title">Nous rejoindre</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p> Incrivez-vous pour recevoir nos newsletters, 
+              </button>
+            </div>
+            <div class="modal-body">
+              <p> Incrivez-vous pour recevoir nos newsletters, 
               suivre nos actualités et participer à nos actions
-            </p>
-            <form>
+              </p>
               <div class="form-group">
                 <label for="inputEmail">Email</label>
                 <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
                 placeholder="Enter email">
-               </div>
-              <div class="form-group">
                 <label for="Nom">Nom</label>
                 <input type="text" class="form-control" id="nom" placeholder="Nom">
                 <label for="Prénom">Prénom</label>
                 <input type="text" class="form-control" id="prénom" placeholder="Prénom">
               </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Valider</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-          </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Valider</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+            </div>
         </div>
       </div>
     </div>
-    <!-- Dons -->
+    </form>
+      <!-- formulaireDons -->
+    <form>
     <div class="modal" id="dons" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -252,17 +255,16 @@
             <p> Vos dons nous servent à faire vivre notre associations et nous aide dans nos actions.
               <br> Cliquez sur paiement pour accéder à la page de validation.
             </p>
-            <form>
-              <div class="form-group">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
                 placeholder="Enter email">
-                <label for="Nom">Nom</label>
-                <input type="text" class="form-control" id="nom" placeholder="Nom">
-                <label for="Prénom">Prénom</label>
-                <input type="text" class="form-control" id="prénom" placeholder="Prénom">
-                <label class="control-label" for="valeurDon">Valeur du don</label>
-                <select id="valeurDon" class="form-control" name="valeurDon">
+              <label for="Nom">Nom</label>
+              <input type="text" class="form-control" id="nom" placeholder="Nom">
+              <label for="Prénom">Prénom</label>
+              <input type="text" class="form-control" id="prénom" placeholder="Prénom">
+              <label class="control-label" for="valeurDon">Valeur du don</label>
+              <select id="valeurDon" class="form-control" name="valeurDon">
                     <option value="2">2€</option>
                     <option value="5">5€</option>
                     <option value="10">10€</option>
@@ -272,9 +274,9 @@
                     <option value="50">50€</option>
                     <option value="100">100€</option>
                     <option value="100+">Don supèrieur à 100€</option>
-
                 </select> 
-              </div>
+            </div>
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Valider</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
@@ -282,7 +284,48 @@
         </div>
       </div>
     </div>
-  </div>
+  </form>
+  <!-- formulaireInscription -->
+  <form>
+    <div class="modal" id="inscription" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Inscription</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p> Merci de vous inscrire au évènement pour pouvoir y participer
+              </p>
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" 
+                placeholder="Enter email">
+                <label for="Nom">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+                <label for="Prénom">Prénom</label>
+                <input type="text" class="form-control" id="prénom" placeholder="Prénom">
+                <label class="control-label" for="valeurDon">Nombre de personnes</label>
+                <select id="valeurDon" class="form-control" name="valeurDon">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="5+">Plus de 5</option>
+                  </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Valider</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
   </article>
   <footer class="row">
     <div class="footerContents">
