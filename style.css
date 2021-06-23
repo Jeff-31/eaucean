@@ -111,7 +111,7 @@ padding-top: 10px;
   margin: 4px 50px 4px;
 }
 
-.rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button {
+.rejoin-button, .donations-button, .contact-button, .actions-button {
   padding: 5px 20px;
   margin: 20px 50px;
   border: 0;
@@ -119,6 +119,19 @@ padding-top: 10px;
   background: rgb(2, 47, 99);
   color: #fff;
   font-size: 1.5rem;
+  font-weight: 600;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.agenda-button{
+
+  border: 0;
+  border-radius: 20px;
+  background: rgb(2, 47, 99);
+  color: #fff;
   font-weight: 600;
   display: inline;
   align-items: center;
@@ -233,4 +246,25 @@ a{
 
 h3{
   font-size: 5rem;
+}
+
+.evenement{
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td,
+.table>thead>tr>th{
+  vertical-align: middle;
+  align-content: space-around;
+}
+.modal-dialog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.table{
+  flex-wrap: nowrap;
 }
