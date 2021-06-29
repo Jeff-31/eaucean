@@ -2,10 +2,12 @@
   font-family: "Comic Sans MS", Arial, Verdana, sans-serif; 
 }
 
-body{
-  max-width: 1200px ;
-}
 
+article {
+  max-width: 1200px ;
+  margin-left: auto;
+  margin-right: auto 
+}
 
 /* Add a hover effect on icon*/
 .fa:hover {
@@ -86,7 +88,7 @@ justify-content: flex-end;
 .navbar, .navbar-brand{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content:center;
   align-items: center;
   text-align: center;
   font-size: 1.8rem ;
@@ -127,7 +129,6 @@ padding-top: 10px;
 }
 
 .agenda-button{
-
   border: 0;
   border-radius: 20px;
   background: rgb(2, 47, 99);
@@ -139,11 +140,6 @@ padding-top: 10px;
   cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
-  margin-left:0;
-  padding-left:0;
-}
 
 
 .rejoin-button, .donations-button, .contact-button, .actions-button, .agenda-button{
@@ -155,11 +151,9 @@ ul {
 transform : scale(1.1, 1.1);
 }
 
-.teamPic{
-  object-fit: cover;
-  width: 400px;
-  height: auto;
-  }
+.teamPic donationPic {
+margin: 15px;
+}
 
 .card{
     display: flex;
@@ -193,8 +187,20 @@ body {
 
 nav{
   color:#559ff5;
-
 }
+.navbar-light .navbar-nav .nav-link {
+  color: #559FF5;
+}
+
+.navbar, .navbar-brand {
+  text-align:left;
+}
+
+.navbar-light .navbar-toggler {
+  color: #559FF5;
+  border-color: #0d417e;
+}
+
 .fishAnimation{
   animation: 3s ease-in 0.5s infinite alternate gogogo;
   margin-right: 15px;
@@ -215,18 +221,30 @@ nav{
 
 footer{
   display: flex;
-  justify-content: center;
   background:rgb(2, 47, 99) ;
   color: #fff;
   width: auto;
   padding-top: 10px;
 }
+
 .footerContents{
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
-.socialList li{
+.footerContents>div{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .footerContents {
+      font-size: 5px;
+    }
+  }
+
+.socialList>li{
   display: inline;
 }
 
@@ -240,18 +258,23 @@ i{
   margin: 5px;
 }
 
-a{
-  margin: 5px;
-}
 
 h3{
   font-size: 5rem;
 }
 
 .evenement{
-  font-size: 20px;
+  font-size: 15px;
   font-weight:bold;
 }
+
+ul {
+  margin-left:0;
+  padding-left:0;
+  list-style: none;
+}
+
+
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td,
 .table>thead>tr>th{
@@ -267,4 +290,16 @@ h3{
 
 .table{
   flex-wrap: nowrap;
+}
+
+.summary{
+  align-items: flex-start;
+}
+
+.partnerSite{
+  align-items: center;
+}
+
+.socialFooterList{
+  align-items:flex-end;
 }
