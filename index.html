@@ -27,8 +27,8 @@
     </div>
     <nav class="row navbar  navbar-light" style="background-color: white;">
       <a>Rejoignez nous sur les réseaux</a>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-facebook-square"></i>
+      <a href="https://www.instagram.com" target="_blank" ><i class="fab fa-instagram-square"></i></a>
+      <a href="https://www.facebook.com" target="_blank" ><i class="fab fa-facebook-square"></i></a>
       <div class="fishAnimation"></div>
       <a class ="navbar-brand">Menu</a>
           <button type="button" 
@@ -53,7 +53,7 @@
           <a class="nav-link" href="agenda.html">Agenda</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#actionscard">Nos actions</a>
+         <a class="nav-link" href="actions.html">Nos actions</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#donations">Dons</a>
@@ -126,7 +126,7 @@
             hendrerit. Maecenas consequat maximus nisi, vitae posuere nunc lobortis at. Proin 
             finibus facilisis dolor sit amet maximus. Ut maximus quam at ex dictum hendrerit. </p>
       </div>
-      <button class="actions-button">Voir toutes nos actions</button>
+      <button class="actions-button"><a href="actions.html">Voir toutes nos actions</a></button>
       </div>
     </section>
     <!-- Section Dons-->
@@ -174,6 +174,12 @@
             <td><button class="agenda-button" data-toggle="modal" 
               data-target="#inscription">Inscription</button></td>
           </tr>
+          <tr>
+            <td>25/11/2021</td>
+            <td><a class="evenement" href="agenda.html#collecte2" target="_blank" >Collecte de déchets</a></td>
+            <td><button class="agenda-button" data-toggle="modal" 
+              data-target="#inscription">Inscription</button></td>
+          </tr>
          </tbody>
       </table>
       </div>
@@ -201,7 +207,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" 
+            data-target="#construction">Valider</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
           </div>
         </div>
@@ -234,7 +241,8 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Valider</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal"
+               data-target="#construction">Valider</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
             </div>
         </div>
@@ -279,7 +287,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" 
+            data-target="#construction" >Valider</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
           </div>
         </div>
@@ -320,9 +329,31 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Valider</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" 
+              data-target="#construction">Valider</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
             </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- formulaireConstruction -->
+  <form>
+    <div class="modal" id="construction" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Annuler</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p> site pour evaluation scolaire</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          </div>
         </div>
       </div>
     </div>
@@ -336,7 +367,7 @@
         <h5 class="listtitle">Sections : </h5>
           <ul>
             <li><a href="#whoarewe">Qui sommes nous</a></li>
-            <li><a href="#actionscard">Nos actions</a></li>
+            <li><a href="actions.html">Nos actions</a></li>
             <li><a href="agenda.html">Agenda</a></li>
             <li><a href="#donations">Dons</a></li>
           </ul>
@@ -354,8 +385,10 @@
       <div class="socialFooterList col-4">
         <h5 class="listtitle">Réseaux sociaux : </h5>
           <ul class="socialList">
-            <li><i class="fab fa-facebook-square"></i></li>
-            <li><i class="fab fa-instagram-square"></i></li>
+            <li><a href="https://www.instagram.com" target="_blank" >
+              <i class="fab fa-instagram-square"></a></i></li>
+            <li><a href="https://www.facebook.com" target="_blank" >
+              <i class="fab fa-facebook-square"></a></i></li>
           </ul>
       </div>
     </div>
